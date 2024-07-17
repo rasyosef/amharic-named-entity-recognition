@@ -13,6 +13,11 @@ The reported precision, recall, and f1 metrics are macro averages.
 |[xlm-roberta-base](https://huggingface.co/FacebookAI/xlm-roberta-base)|279M|0.69|0.79|0.73|
 |[am-roberta](https://huggingface.co/uhhlt/am-roberta)|443M|0.67|0.72|0.69|
 
+### Fine-tuned Model
+A finetuned `bert-medium-amharic` model is available on HuggingFace:
+
+[rasyosef/bert-medium-amharic-finetuned-ner](https://huggingface.co/rasyosef/bert-medium-amharic-finetuned-ner)
+
 ### References
 
 - [Token classification](https://huggingface.co/learn/nlp-course/chapter7/2?fw=pt)
