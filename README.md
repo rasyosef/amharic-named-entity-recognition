@@ -18,6 +18,41 @@ A finetuned `bert-medium-amharic` model is available on HuggingFace:
 
 [rasyosef/bert-medium-amharic-finetuned-ner](https://huggingface.co/rasyosef/bert-medium-amharic-finetuned-ner)
 
+#### How to use
+
+You can use this model directly with a pipeline for token classification:
+
+```python
+from transformers import pipeline
+checkpoint = "rasyosef/bert-medium-amharic-finetuned-ner"
+token_classifier = pipeline("token-classification", model=checkpoint, aggregation_strategy="simple")
+token_classifier("አትሌት ኃይሌ ገ/ሥላሴ ኒውዮርክ ውስጥ በሚደረገው የተባበሩት መንግሥታት ድርጅት ልዩ የሰላም ስብሰባ ላይ እንዲገኝ ተጋበዘ።")
+```
+
+Output:
+```python
+[{'entity_group': 'TTL',
+  'score': 0.9841112,
+  'word': 'አትሌት',
+  'start': 0,
+  'end': 4},
+ {'entity_group': 'PER',
+  'score': 0.99379075,
+  'word': 'ኃይሌ ገ / ሥላሴ',
+  'start': 5,
+  'end': 14},
+ {'entity_group': 'LOC',
+  'score': 0.8818362,
+  'word': 'ኒውዮርክ',
+  'start': 15,
+  'end': 20},
+ {'entity_group': 'ORG',
+  'score': 0.99056435,
+  'word': 'የተባበሩት መንግሥታት ድርጅት',
+  'start': 32,
+  'end': 50}]
+```
+
 ### References
 
 - [Token classification](https://huggingface.co/learn/nlp-course/chapter7/2?fw=pt)
