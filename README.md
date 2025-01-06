@@ -7,6 +7,7 @@ The reported precision, recall, and f1 metrics are macro averages.
 |Model|Size (# params)| Precision | Recall | F1 |
 | --- | ------------- | --------- |------- | -- |
 |[roberta-base-amharic](https://huggingface.co/rasyosef/roberta-base-amharic)|110M|**0.74**|**0.80**|**0.78**|
+|[roberta-medium-amharic](https://huggingface.co/rasyosef/roberta-medium-amharic)|42.2M|0.72|0.79|0.75|
 |[bert-medium-amharic](https://huggingface.co/rasyosef/bert-medium-amharic)|40.5M|0.64|0.73|0.68|
 |[bert-small-amharic](https://huggingface.co/rasyosef/bert-small-amharic)|27.8M|0.64|0.72|0.68|
 |[bert-mini-amharic](https://huggingface.co/rasyosef/bert-mini-amharic)|10.7M|0.60|0.67|0.64|
